@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Trivia Game!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+       <!--nav bar and title of game--> 
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Totally Trivial Trivia!</a>
+            <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Instructions:
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">You have 15 seconds to answer each question. Type in 1, 2, or 3 and hit SUBMIT to answer. <br> Click "Want to Play Again?" after the game is over to restart! Good Luck! </a>
+                    </div>
+                  </div>
+        </nav>   
+        <!--random tip from kristen, input type="radio"-->
+       <!--main jumbotron that holds questions and answers-->
+        <main role="main">
+            <div class="screen-1">
+                <div class="jumbotron my-grad fc-white p_rel">
+                    <div class="container">
+                        <p id="game-question" class="questions"></p>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4 center">
+                                <ol id="answers" class="fs-2rem di_bk list-style"></ol>
+                                <div class="input_wrapper">
+                                    <input type="number" id="answer" class="h_45 w_100 bc_7 di_bk input_box" />
+                                    <input class="btn btn-mine btn-lg di_bk" type="submit" value="Submit" id="result" role="button">
+                                </div>
+                            </div>                          
+                            <div class="col-md-4">    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="container1">
+                <h3 id="correct"></h3>
+                <h3 id="incorrect"></h3>
+                </div>
+            </div>
+            <!--end of main jumbotron-->
+            <!--timer container-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 br-gray">
+                        <h4 id="solution"></h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 id="countdown" class="display-3 cd-style ss_fs"></h1>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!--timer container ends-->
+            <!--jumbotron 2 with correct/incorrect answers. also a display when game is over-->
+            <div class="screen-2">
+                <div class="jumbtron my-grad-2 fc-dk-gray p_rel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h3 class="display-3 ss_fs">Thanks for Playing My Quiz Game!</h3>
+                            </div>
+                            <div class="col-md-4">
+                                    <a id="so" href="#" class="btn btn-primary btn-lg btn-block btn-huge">Want to Play Again?</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end of jumbotron2-->
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <span class="text">&copy;2019 Tony Kruso</span>
+            </div>
+        </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="assets/javascript/app.js"></script>
+
+
+
+    </body>
+</html>
