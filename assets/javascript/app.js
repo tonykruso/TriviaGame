@@ -88,7 +88,7 @@ var questions = [
     {
         quest: "9. The 2002 film '28 Days Later' is mainly set in which European country?",
         answ: { 0: "United Kingdom", 1: "USA", 2: "France"},
-        cora: 3
+        cora: 1
     },
     {
         quest: "10. What is the 2nd Rule of Fight Club?",
